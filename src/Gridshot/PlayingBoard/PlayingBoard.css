@@ -1,10 +1,8 @@
 .PlayingBoard {
   color: white;
   margin-top: 50px;
-  max-width: 350px; 
-  max-height: 350px;
   min-width: 70%; 
-  min-height: 70%;
+  min-height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
