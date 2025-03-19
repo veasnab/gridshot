@@ -11,7 +11,6 @@
 
 .ScoreBoard .point {
   color: white;
-  width: 200px;
   height: 0;
   display: flex; 
   justify-content: center;
@@ -24,8 +23,7 @@
 }
 
 .ScoreBoard .precision {
-  color: white;
-  width: 200px;
+  color: white;  
   height: 0;
   display: flex;
   justify-content: center;
@@ -43,5 +41,18 @@
   margin: 0px 20px 0px 20px;
 }
 
+.ScoreBoard .point, .ScoreBoard .precision {
+  min-width: 150px; 
+}
 
+@media (min-width: 768px) {
+  .ScoreBoard .point, .ScoreBoard .precision {
+    min-width: 200px;
+  }
+}
 
+@media (min-width: 1200px) {
+  .ScoreBoard .point, .ScoreBoard .precision {
+    min-width: 250px;
+  }
+}
