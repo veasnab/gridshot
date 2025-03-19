@@ -1,0 +1,47 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Ephesis&family=Forum&family=Jua&display=swap');
+
+.ScoreBoard {
+  font-family: 'DynaPuff', sans-serif;
+  color: white;
+  display: flex; 
+  align-items: center;
+  margin-top: 30px;
+}
+
+.ScoreBoard .point {
+  color: white;
+  width: 200px;
+  height: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-top: 20px solid rgba(34,79,195,0.7);
+	border-right: 30px solid white;
+	border-bottom: 20px solid rgba(34,79,195,0.7);
+  border-radius: 20px 0 0 30px;
+  margin: 0;
+}
+
+.ScoreBoard .precision {
+  color: white;
+  width: 200px;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 20px solid rgba(34,79,195,0.7);
+	border-left: 30px solid white;
+	border-bottom: 20px solid rgba(34,79,195,0.7);
+  border-radius: 0 20px 30px 0;
+  margin: 0;
+}
+
+.ScoreBoard .time {
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+}
+
+
+

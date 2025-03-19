@@ -1,0 +1,95 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Ephesis&family=Forum&family=Jua&display=swap');
+
+
+.StartUI {
+  cursor: url('../../../assets/crosshair.svg'), crosshair;
+}
+.StartUI .ready {
+  color: white;
+  font-family: 'DynaPuff', sans-serif;
+  border: 1px solid white;
+  border-radius: 10px 10px 10px 10px;
+  height: 50px;
+  width: 100px;
+  background:rgba(34,79,195,0.8);
+  cursor: pointer;
+}
+
+.StartUI .time {
+  color: white;
+  font-family: 'DynaPuff', sans-serif;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  background: radial-gradient(circle, 
+    rgba(34,79,195,1) 0%, 
+    rgba(34,79,195,1) 35%,
+    rgba(34,79,195,0.8) 35%,
+    rgba(34,79,195,0.8) 35%,
+    rgba(34,79,195,0.6) 35%,
+    rgba(34,79,195,0.6) 100%);
+   /* Adds animation */
+  animation: gradientAnimation 6s ease-in-out infinite;
+  cursor: url('../../../assets/crosshair.svg'), crosshair;
+}
+
+/* Keyframes to animate the gradient */
+@keyframes gradientAnimation {
+  0% {
+    background: radial-gradient(circle, 
+      rgba(34,79,195,1) 0%, 
+      rgba(34,79,195,1) 35%,
+      rgba(34,79,195,0.8) 35%,
+      rgba(34,79,195,0.8) 50%,
+      rgba(34,79,195,0.6) 50%,
+      rgba(34,79,195,0.6) 100%);
+  }
+  20% {
+    background: radial-gradient(circle, 
+      rgba(34,79,195,1) 0%, 
+      rgba(34,79,195,1) 35%,
+      rgba(34,79,195,0.8) 35%,
+      rgba(34,79,195,0.8) 60%,
+      rgba(34,79,195,0.6) 60%,
+      rgba(34,79,195,0.6) 100%);
+  }
+  40% {
+    background: radial-gradient(circle, 
+    rgba(34,79,195,1) 0%, 
+    rgba(34,79,195,1) 35%,
+    rgba(34,79,195,0.8) 35%,
+    rgba(34,79,195,0.8) 70%,
+    rgba(34,79,195,0.6) 70%,
+    rgba(34,79,195,0.6) 100%);
+  }
+  60% {
+    background: radial-gradient(circle, 
+      rgba(34,79,195,1) 0%, 
+      rgba(34,79,195,1) 35%,
+      rgba(34,79,195,0.8) 35%,
+      rgba(34,79,195,0.8) 60%,
+      rgba(34,79,195,0.6) 60%,
+      rgba(34,79,195,0.6) 100%);
+  }
+  80% {
+    background: radial-gradient(circle, 
+      rgba(34,79,195,1) 0%, 
+      rgba(34,79,195,1) 35%,
+      rgba(34,79,195,0.8) 35%,
+      rgba(34,79,195,0.8) 50%,
+      rgba(34,79,195,0.6) 50%,
+      rgba(34,79,195,0.6) 100%);
+  }
+  100% {
+    background: radial-gradient(circle, 
+    rgba(34,79,195,1) 0%, 
+    rgba(34,79,195,1) 35%,
+    rgba(34,79,195,0.8) 35%,
+    rgba(34,79,195,0.8) 35%,
+    rgba(34,79,195,0.6) 35%,
+    rgba(34,79,195,0.6) 100%);
+  }
+}
+

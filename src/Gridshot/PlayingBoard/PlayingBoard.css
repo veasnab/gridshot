@@ -1,0 +1,11 @@
+.PlayingBoard {
+  color: white;
+  margin-top: 50px;
+  min-width: 350px; 
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: url('../../assets/crosshair.svg'), crosshair;
+}

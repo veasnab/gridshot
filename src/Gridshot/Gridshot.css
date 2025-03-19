@@ -1,0 +1,21 @@
+.Gridshot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0; left: 0; right: 0; bottom: 0;
+  position: absolute; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  padding: 30px;
+}
+
+.Gridshot::before {
+  content: ''; 
+  position: absolute; 
+  top: 0; left: 0;right: 0; bottom: 0;
+  background-image: url("../assets/images.png");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%); 
+  z-index: -1; 
+}

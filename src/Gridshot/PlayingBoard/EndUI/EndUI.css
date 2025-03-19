@@ -1,0 +1,35 @@
+.EndUI {
+  color: white;
+  font-family: 'DynaPuff', sans-serif;
+  border-radius: 5px 5px 5px 5px;
+  width: 150px;
+  padding: 20px;
+  border: 1px solid white;
+  background:rgba(34,79,195,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.EndUI header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.EndUI p {
+  width: 150px; 
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.EndUI button {
+  color: white;
+  font-family: 'DynaPuff', sans-serif;
+  border: 1px solid white;
+  margin-top: 20px;
+  border-radius: 10px 10px 10px 10px;
+  width: 100px;
+  background:rgba(34,79,195,0.8);
+  cursor: pointer;
+}
+
+
