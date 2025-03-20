@@ -30,7 +30,7 @@ const PlayingBoard = ({score, setScore, gameState, setGameStates}) => {
   const renderUI = () => {
     switch (gameState) {
       case 'start': return <StartUI setGameStates={setGameStates} />;
-      case 'targets': return <Targets boardPos={boardPos} updateBoardPos={updateBoardPos} score={score} setScore={setScore}/>;
+      case 'targets': return <Targets boardPos={boardPos} score={score} setScore={setScore}/>;
       case 'end': return <EndUI setGameStates={setGameStates} score={score} setScore={setScore}/>;
       default:return null;}
   };
