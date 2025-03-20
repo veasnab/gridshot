@@ -15,16 +15,22 @@ const PlayingBoard = ({score, setScore, gameState, setGameStates}) => {
  
   useEffect(() => {
     updateBoardPos();
+   
     window.addEventListener('resize', updateBoardPos);
+    window.addEventListener('orientationchange', updateBoardPos);
+    document.addEventListener('fullscreenchange', updateBoardPos);
+
     return () => {
       window.removeEventListener('resize', updateBoardPos);
+      window.removeEventListener('orientationchange', updateBoardPos);
+      document.removeEventListener('fullscreenchange', updateBoardPos);
     };
-  }, []);
+  }, []); 
 
   const renderUI = () => {
     switch (gameState) {
       case 'start': return <StartUI setGameStates={setGameStates} />;
-      case 'targets': return <Targets boardPos={boardPos} score={score} setScore={setScore} />;
+      case 'targets': return <Targets boardPos={boardPos} updateBoardPos={updateBoardPos} score={score} setScore={setScore}/>;
       case 'end': return <EndUI setGameStates={setGameStates} score={score} setScore={setScore}/>;
       default:return null;}
   };
