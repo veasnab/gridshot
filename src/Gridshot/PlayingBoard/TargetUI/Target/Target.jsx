@@ -9,14 +9,15 @@ const Target = ({score, setScore, boardPos}) => {
     y: Math.random() * boardPos.height + boardPos.y
   });
 
-  const fireShot = new Audio(bulletSound); 
+ 
   const handleFireShot = () => {
+    const fireShot = new Audio(bulletSound);
+    fireShot.play(); 
     setPos({
       x: Math.random() * boardPos.width + boardPos.x,
       y: Math.random() * boardPos.height + boardPos.y
     });
     setScore({...score, point: score.point + 1});
-    fireShot.play(); 
   };
 
   return (
