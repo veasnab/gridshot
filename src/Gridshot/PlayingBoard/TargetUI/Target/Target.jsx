@@ -19,8 +19,8 @@ const Target = ({score, setScore, boardPos}) => {
     setScore({...score, point: score.point + 1});
   };
 
-  const posX = pos.randomX * boardPos.width + boardPos.x;
-  const posY = pos.randomY * boardPos.height + boardPos.y;
+  const posX = pos.randomX * boardPos.width;
+  const posY = pos.randomY * boardPos.height;
   
   return (
     <button
