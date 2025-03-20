@@ -1,6 +1,6 @@
 .PlayingBoard {
   color: white;
-  min-width: 65%; 
+  min-width: 70%; 
   min-height: 50%;
   display: flex;
   flex-direction: column;
