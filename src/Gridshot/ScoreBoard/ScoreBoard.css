@@ -6,7 +6,6 @@
   color: white;
   display: flex; 
   align-items: center;
-  margin-top: 30px;
 }
 
 .ScoreBoard .point {
@@ -42,7 +41,7 @@
 }
 
 .ScoreBoard .point, .ScoreBoard .precision {
-  min-width: 125px; 
+  min-width: 100px; 
 }
 
 @media (min-width: 768px) {
