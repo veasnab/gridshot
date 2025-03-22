@@ -1,16 +1,13 @@
 import { useState } from 'react';
-import bulletSound from '../../../../assets/shot.mp3'; 
-
 import './Target.css';
 
-const Target = ({score, setScore, boardPos}) => {
+const Target = ({score, setScore, boardPos, fireShot}) => {
   const [pos, setPos] = useState({
     randomX: Math.random(),
     randomY: Math.random()
   });
 
   const handleFireShot = () => {
-    const fireShot = new Audio(bulletSound);
     fireShot.play(); 
     setPos({
       randomX: Math.random(),
