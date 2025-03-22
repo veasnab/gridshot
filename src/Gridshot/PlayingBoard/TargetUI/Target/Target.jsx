@@ -16,8 +16,8 @@ const Target = ({score, setScore, boardPos, fireShot}) => {
     setScore({...score, point: score.point + 1});
   };
 
-  const posX = Math.floor(pos.randomX * (boardPos.width - 130)) + 65;
-  const posY = Math.floor(pos.randomY * (boardPos.height - 130)) + 65;
+  const posX = Math.floor(pos.randomX * (boardPos.width - 65));
+  const posY = Math.floor(pos.randomY * (boardPos.height - 65));
   
   return (
     <button
